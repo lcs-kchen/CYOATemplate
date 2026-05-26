@@ -10,4 +10,9 @@ import Foundation
 struct Player: Identifiable, Codable, Hashable {
     let id: UUID
     let email: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case email
+    }
 }
