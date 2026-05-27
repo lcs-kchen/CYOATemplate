@@ -10,6 +10,6 @@ import Supabase
 
 let supabase = SupabaseClient(
   supabaseURL: URL(string: "https://wwwqkzsnksxhycpxsfrt.supabase.co")!,
-  supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3d3FrenNua3N4aHljcHhzZnJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkzNjEyNDksImV4cCI6MjA5NDkzNzI0OX0.XNadKgHq_emtFO5Ua270EIyyIji6C8i4MlsOAZjoFx8"
+  supabaseKey: "sb_publishable_yEOJ08IUbclmSj0Zt1pXOw_J_atR_Gk"
 )
 
