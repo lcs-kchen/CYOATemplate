@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9BAA9D2FC62EA200BC2D19 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BAA9C2FC62E9F00BC2D19 /* CharactersView.swift */; };
 		8123CD292A34F99E00F9DF1C /* StoryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123CD282A34F99E00F9DF1C /* StoryInformation.swift */; };
 		8123CD2B2A34F9C100F9DF1C /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123CD2A2A34F9C100F9DF1C /* SharedFunctions.swift */; };
 		8123CD2D2A34FE4800F9DF1C /* DirectedGraphBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123CD2C2A34FE4800F9DF1C /* DirectedGraphBuilder.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E9BAA9C2FC62E9F00BC2D19 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 		8123CD162A34CF7B00F9DF1C /* GraphGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GraphGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		8123CD282A34F99E00F9DF1C /* StoryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryInformation.swift; sourceTree = "<group>"; };
 		8123CD2A2A34F9C100F9DF1C /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				81C784AA2A28AD0B001BC867 /* PageView.swift */,
 				812F51382C0D01A300C1A270 /* StatsView.swift */,
 				812F513A2C0D06C900C1A270 /* SettingsView.swift */,
+				2E9BAA9C2FC62E9F00BC2D19 /* CharactersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				812F51052C0C9FAD00C1A270 /* Supabase.swift in Sources */,
 				812F51462C0DE6FE00C1A270 /* Enumerations.swift in Sources */,
 				812F51412C0DC94200C1A270 /* EdgesViewModel.swift in Sources */,
+				2E9BAA9D2FC62EA200BC2D19 /* CharactersView.swift in Sources */,
 				81C198A92A251ABB0047A4B3 /* CYOATemplateApp.swift in Sources */,
 				812F512F2C0CDC3300C1A270 /* BookStore.swift in Sources */,
 				812F51372C0CF13D00C1A270 /* CoverView.swift in Sources */,

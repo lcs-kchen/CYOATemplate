@@ -21,6 +21,9 @@ struct BookView: View {
     // Whether the settings view is being shown right now
     @State private var showingSettingsView = false
     
+    // Whether the characters view is being shown right now
+    @State private var showingCharactersView = false
+    
     // Track when app is foregrounded, backgrounded, or made inactive
     @Environment(\.scenePhase) var scenePhase
 
@@ -54,6 +57,16 @@ struct BookView: View {
             // Toolbar to show buttons for various actions
             .toolbar {
                 
+                // Show the character view
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        showingCharactersView = true
+                    } label: {
+                        Image(systemName: "face.smiling.inverse")
+                    }
+
+                }
+                
                 // Show the statistics view
                 ToolbarItem(placement: .automatic) {
                     Button {
@@ -74,6 +87,10 @@ struct BookView: View {
 
                 }
 
+            }
+            // Show the character view
+            .sheet(isPresented: $showingCharactersView) {
+                CharactersView(showing: $showingCharactersView)
             }
             // Show the statistics view
             .sheet(isPresented: $showingStatsView) {
