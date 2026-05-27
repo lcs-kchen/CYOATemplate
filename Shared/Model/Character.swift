@@ -7,17 +7,24 @@
 
 import Foundation
 
-// MODEL
-//
-// NOTE: Model names should be singular       
-struct Character: Identifiable {
+struct Character: Identifiable, Codable {
     
     // MARK: Stored properties
-    // Stored properties must be provided with a value by providing an argument when creating an instance of this structure, or, be initialized with a default value
+    var id: Int
+    var name: String
+    var description: String
+    var image: String?
+    var pageFirstFound: Int
     
-    // Unique identifier to conform to Identifiable protocol
-    // This is initialized with a default value
-    let id = UUID()
+    // Translating snake_case into camelCase
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case image
+        case pageFirstFound = "page_first_found"
+    }
+    
     
 
     
