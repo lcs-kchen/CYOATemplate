@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Character: Identifiable, Codable {
+struct SignificantItem: Identifiable, Codable {
     
     // MARK: Stored properties
     var id: Int
