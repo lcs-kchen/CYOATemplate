@@ -21,8 +21,8 @@ struct BookView: View {
     // Whether the settings view is being shown right now
     @State private var showingSettingsView = false
     
-    // Whether the characters view is being shown right now
-    @State private var showingCharactersView = false
+    // Whether the significant items view is being shown right now
+    @State private var showingSignificantItemsView = false
     
     // Track when app is foregrounded, backgrounded, or made inactive
     @Environment(\.scenePhase) var scenePhase
@@ -57,10 +57,10 @@ struct BookView: View {
             // Toolbar to show buttons for various actions
             .toolbar {
                 
-                // Show the character view
+                // Show the significant items view
                 ToolbarItem(placement: .automatic) {
                     Button {
-                        showingCharactersView = true
+                        showingSignificantItemsView = true
                     } label: {
                         Image(systemName: "face.smiling.inverse")
                     }
@@ -88,9 +88,9 @@ struct BookView: View {
                 }
 
             }
-            // Show the character view
-            .sheet(isPresented: $showingCharactersView) {
-                CharactersView(showing: $showingCharactersView)
+            // Show the significant items view
+            .sheet(isPresented: $showingSignificantItemsView) {
+                SignificantItemListView(showing: $showingSignificantItemsView)
             }
             // Show the statistics view
             .sheet(isPresented: $showingStatsView) {
