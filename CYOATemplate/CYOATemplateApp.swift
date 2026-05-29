@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct CYOATemplateApp: App {
+
+    @State private var sharedAuthenticationStore = SharedAuthenticationStore()
+
     var body: some Scene {
+
         WindowGroup {
-            AppEntryView()
+
+            BranchingView()
+                .environment(sharedAuthenticationStore)
         }
     }
 }
